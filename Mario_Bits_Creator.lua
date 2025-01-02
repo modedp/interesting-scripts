@@ -1,8 +1,8 @@
-local Ws = game:GetService("Workspace") --Create a folder called Built to place all the parts inside.
+local Ws = game:GetService("Workspace") --[[Create a folder called Built to place all the parts inside.]]
 local Xblock = Ws:FindFirstChild("BlockSizeExpected")
 local Xsize = Xblock and Xblock.Size or Vector3.new(0.2,0.2,0.2)
 local Sizes = (((Xsize.X > Xsize.Y) and (Xsize.X > Xsize.Z) and Xsize.X) or ((Xsize.Y > Xsize.X) and (Xsize.Y > Xsize.Z) and Xsize.Y) or ((Xsize.Z > Xsize.Y) and (Xsize.Z > Xsize.X) and  Xsize.Z)) or Xsize.Y
-local Xpos = (Xblock.Position or Vector3.new(50,100,50)) + Vector3.new(0,1 * Sizes,0)
+local Xpos = (Xblock and Xblock.Position or Vector3.new(50,100,50)) + Vector3.new(0,1 * Sizes,0)
 local Material = "SmoothPlastic"
 local SBit = {
 	[1] = Color3.fromRGB(200,76,12),
