@@ -120,7 +120,7 @@ function BuildForLine(L,N)
 	end
 end
 
-local ToBuild = BrickBlockDat
+local ToBuild = BrickBlockDat --[[Change To Desired Block]]
 
 for p1 = 1, #ToBuild do
 	BuildForLine(ToBuild[p1],p1)
