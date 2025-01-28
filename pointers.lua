@@ -61,11 +61,17 @@ local function createPointer(name: string, initialValue: PointerValue): Pointer
 		instance:GetPropertyChangedSignal("Value"):Connect(function() 
 			local pass,newValue = pcall(HttpService.JSONDecode,HttpService,instance.Value)
 			newPointer:UpdateValue(pass and newValue or newPointer:GetValue())
-			instance.Value = HttpService:JSONDecode(newPointer:GetValue())
+			instance.Value = HttpService:JSONEncode(newPointer:GetValue())
 		end)
 		newPointer.UpdateValue = function(self, newValue : PointerValue) : PointerValue
+			local encoded,coded = pcall(HttpService.JSONEncode,HttpService,newValue)
+			if encoded then
+				newValue = coded
+				instance.Value = newValue
+			end
 			local pass,value = pcall(HttpService.JSONDecode,HttpService,newValue)
 			self.Value = pass and value or type(newValue) == "table" and newValue or self.Value
+			self.OnChange:Fire(self.Value)
 			return self.Value :: PointerValue
 		end
 	else
@@ -73,6 +79,9 @@ local function createPointer(name: string, initialValue: PointerValue): Pointer
 			newPointer:UpdateValue(instance.Value)
 		end)
 		instance.Value = initialValue
+		newPointer.OnChange.Event:Connect(function(sentValue) 
+			instance.Value = sentValue
+		end)
 	end
 
 	return newPointer
