@@ -1,4 +1,4 @@
---[[ the one and only Reanimation.lua or Reanim Main Lua to load your filthy animations into scripts
+local config = "the one and only Reanimation.lua or Reanim Main Lua to load your filthy animations into scripts"
 -- what? you dont know how to implement? fine ill help.
 -- loadstring("the funny code goes here hahaha. the entire script. or just use the raw httpget from this github!!")()
 ]]
