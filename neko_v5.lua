@@ -1,4 +1,4 @@
---[[It is the infamous Neko v5 Roblox NekoV5s NekoV5 Script that everyone (no one) cares for!]]
+local noway= "It is the infamous Neko v5 Roblox NekoV5s NekoV5 Script that everyone (no one) cares for!"
 --Huhh you getting an error? (I can just foresee it.) 
 --Not my problem pleb. Find a way to replace the missing dependencies yourself. :)
 
