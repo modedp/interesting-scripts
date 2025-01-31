@@ -1,5 +1,6 @@
---[[
-It is the infamous Neko v4 Roblox NekoV4s NekoV4 Script that everyone (no one) cares for!]]
+
+local fun = "It is the infamous Neko v4 Roblox NekoV4s NekoV4 Script that everyone (no one) cares for!"
+--[[]]
 --Huhh you getting an error? (I can just foresee it.) 
 --Not my problem pleb. Find a way to replace the missing dependencies yourself. >:(
 
