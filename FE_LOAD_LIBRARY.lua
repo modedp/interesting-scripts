@@ -1,4 +1,4 @@
---[[ the one and only FE LOADER load library to load your filthy scripts into FE
+local howto = "the one and only FE LOADER load library to load your filthy scripts into FE"
 -- what? you dont know how to implement? fine ill help.
 -- loadstring("the funny code goes here hahaha. the entire script. or just use the raw httpget from this github!!")()
 ]]
