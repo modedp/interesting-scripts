@@ -3,7 +3,7 @@ local noway= "It is the infamous Neko v5 Roblox NekoV5s NekoV5 Script that every
 --Not my problem pleb. Find a way to replace the missing dependencies yourself. :)
 
 getgenv()._reanimate()
-local folder = game:GetObjects('rbxassetid://10107385072')[1]
+local folder = game:GetObjects('rbxassetid://10107385072')[1] --funny dependencies (nekofolder.rbxm why dont you)
 folder.Parent = workspace.non
 
 local falsechar = folder:FindFirstChild('DefaultCharacter6')
