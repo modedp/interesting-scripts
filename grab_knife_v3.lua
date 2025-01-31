@@ -1,3 +1,5 @@
+--[[i have no comments for this one, just have a good time trying to use this one]]
+
 _G.Velocity = 35
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Reanimation.lua"))()
 _G.loop = true
