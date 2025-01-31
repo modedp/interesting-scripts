@@ -1,5 +1,6 @@
-local NotificationBindable = Instance.new("BindableFunction")
+local noway = "wait... it couldnt be... this is the neko script from roblox studio? the nekov1 script? the nekos 18+ neko cat girl script? yes." 
 
+local NotificationBindable = Instance.new("BindableFunction")
 
 
 local SongID = "http://www.roblox.com/asset/?id=198665867"
