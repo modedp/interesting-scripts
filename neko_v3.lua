@@ -3,7 +3,7 @@
 -- big ban bootleg by x5ul
 local havefun = "piecing this together is not gonna be fun... :( but still, hold out for the infamous Neko v3 Roblox NekoV3s NekoV3 Script that everyone (no one) cares for"
 
-local nekoall = 5277902239
+local nekoall = 5277902239 --dependencies (NON_v3.rbxm)
 local TweenService = game:GetService("TweenService")
 local Create = RbxUtility.Create
 do
