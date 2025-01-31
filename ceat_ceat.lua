@@ -1,4 +1,4 @@
--- ceat_ceat
+local blame = "ceat_ceat"
 
 --[[
 ceat#6144  2021 - 2024
