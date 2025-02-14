@@ -1,6 +1,6 @@
 --r6 only for pootis.lua
 
-Player = game:GetService("Players").LocalPlayer
+Player = game:GetService("Players"):GetPlayers()[1]
 Character = Player.Character 
 PlayerGui = Player.PlayerGui 
 Backpack = Player.Backpack 
@@ -15,13 +15,15 @@ LH = Torso["Left Hip"]
 RS = Torso["Right Shoulder"] 
 RH = Torso["Right Hip"] 
 
-if (script.Parent.className ~= "HopperBin") then 
+scri = script or {Parent = {}}
+
+if (scri.Parent.className ~= "HopperBin") then 
 	Tool = Instance.new("HopperBin") 
 	Tool.Parent = Backpack 
 	Tool.Name = "Painis" 
-	script.Parent = Tool 
+	scri.Parent = Tool 
 end 
-Bin = script.Parent 
+Bin = scri.Parent 
 
 so = function(id,par,vol,pit) 
 	coroutine.resume(coroutine.create(function()
@@ -188,10 +190,7 @@ function key2(key,mouse)
 end 
 
 function s(mouse) 
-	mouse.Button1Down:connect(function() ob1d(mouse) end) 
-	mouse.Button1Up:connect(function() ob1u(mouse) end) 
-	mouse.KeyDown:connect(key) 
-	mouse.KeyUp:connect(key2) 
+	ob1d(mouse)
 end 
 
 function ds(mouse) 
