@@ -1,6 +1,8 @@
 local hindihax = "Hindi_hax is here."
 local welcometo = "Hindi hax. by builderboy256"
 local platiformsatnd = "autrootate"
+local broughttoyouby = "Buy Billbert inc"
+local creditsto = "https://www.github.com/mtsvadi"
 local gui = game:GetObjects("rbxassetid://5293725743")[1]
 
 local psb = gui.ImageLabel.psb
