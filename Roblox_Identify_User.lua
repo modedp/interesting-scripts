@@ -1,7 +1,7 @@
 local module = {}
 local userAgent = game:GetService("Players").LocalPlayer
 local camera = workspace.CurrentCamera
-local guiBasic = userAgent.PlayerGui:WaitForChild("Freecam")
+local guiBasic = userAgent.PlayerGui:FindFirstChildOfClass("ScreenGui") or Instance.new("ScreenGui",userAgent.PlayerGui)
 local mouse = userAgent:GetMouse()
 local device = game:GetService("UserInputService")
 local policy = game:GetService("PolicyService")
